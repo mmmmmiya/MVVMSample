@@ -4,8 +4,8 @@
 		xmlns:local="clr-namespace:MVVMSample.Views;assembly=MVVMSample"
 		x:Class="MVVMSample.Views.MainPageXaml"
 		Title = "MVVM Sample">
-	<StackLayout>
-		<Editor Text="{Binding Text}" HorizontalOptions="FillAndExpand" />
-		<Label Text="{Binding AText}" FontSize="36" HorizontalOptions="FillAndExpand" />
+	<StackLayout VerticalOptions="StartAndExpand" Padding="20">
+		<Entry Text="{Binding Text}" Placeholder="input text..." />
+		<Label Text="{Binding AText}" FontSize="36" />
 	</StackLayout>
 </ContentPage>
